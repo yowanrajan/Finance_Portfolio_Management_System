@@ -1,0 +1,16 @@
+.asset-allocation-container {
+  padding: 16px;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .no-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: #888;
+  }
+}

@@ -1,0 +1,29 @@
+.portfolio-list-container {
+  padding: 20px;
+}
+
+.portfolio-header {
+  margin-bottom: 20px;
+}
+
+.portfolio-table {
+  width: 100%;
+}
+
+.no-portfolios {
+  padding: 40px;
+  text-align: center;
+
+  p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+}
+
+tr.mat-row:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.hovered {
+  background-color: rgba(0, 0, 0, 0.04);
+}

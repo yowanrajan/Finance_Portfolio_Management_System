@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>Portfolio Details</h2>
+<mat-dialog-content>
+  <p><strong>Name:</strong> {{ data.portfolio.name }}</p>
+  <p><strong>Total Value:</strong> ₹{{ data.portfolio.totalValue | number:'1.0-2' }}</p>
+  <p><strong>Last Updated:</strong> {{ data.portfolio.lastUpdated | date:'medium' }}</p>
+
+  <h3>Assets ({{ data.portfolio.assets.length }})</h3>
+  <ul>
+    <li *ngFor="let asset of data.portfolio.assets">
+      {{ asset.name }} - ₹{{ asset.value | number:'1.0-2' }}
+    </li>
+  </ul>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="close()">Close</button>
+</mat-dialog-actions>

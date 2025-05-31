@@ -1,0 +1,7 @@
+<div class="chart-container" [style.height.px]="chartHeight">
+  <canvas baseChart
+          [type]="chartType"
+          [data]="chartData || {labels: [], datasets: []}"
+          [options]="chartOptions?.options">
+  </canvas>
+</div>

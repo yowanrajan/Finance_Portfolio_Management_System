@@ -1,0 +1,14 @@
+<div class="asset-allocation-container">
+  <h3>Asset Allocation</h3>
+  <div *ngIf="assets.length === 0" class="no-data">
+    No asset data available
+  </div>
+  <div *ngIf="assets.length > 0">
+    <app-chart
+      [chartData]="chartData"
+      chartType="doughnut"
+      [chartHeight]="250"
+      [showLegend]="true">
+    </app-chart>
+  </div>
+</div>

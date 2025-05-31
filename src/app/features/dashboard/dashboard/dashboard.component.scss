@@ -1,0 +1,65 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.welcome-header {
+  margin-bottom: 20px;
+}
+
+.portfolio-summary, .performance-chart, .market-data {
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.label {
+  font-weight: 500;
+  color: #555;
+}
+
+.value {
+  font-weight: 400;
+
+  &.highlight {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #1976d2;
+  }
+}
+
+.market-table {
+  width: 100%;
+
+  .positive {
+    color: #4caf50;
+  }
+
+  .negative {
+    color: #f44336;
+  }
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+
+  p {
+    margin-top: 16px;
+    color: #666;
+  }
+}
+
+.no-data-message {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+}
